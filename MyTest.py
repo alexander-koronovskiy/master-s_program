@@ -1,10 +1,6 @@
 import matplotlib.pyplot
 from scipy.interpolate import interp1d
 import numpy as np
-import scipy.interpolate
-import sys
-sys.path.insert(0, "c:\\users\\alexander\\anaconda3\\lib\site-packages")
-from pandas import *
 
 ITER = 1000
 
@@ -77,8 +73,18 @@ def chunkIt(seq, num):
 # линейная апроксимация при на n-ном участке
 # вычисление функции fdfa
 if __name__ == '__main__':
+    #профиль функции
     p_array = do_profile()
-
+    # разбиение с количеством шагов num_x на интервале
+    num_x = 10
+    x = np.linspace(0, 1000, num=num_x, endpoint=True)
+    y = p_array[::ITER // num_x]
+    # интерполяция
+    f = interp1d(x, y)
+    xnew = np.linspace(0, 1000, num=1000, endpoint=True)
+    # графики
+    matplotlib.pyplot.plot(f(xnew))
     matplotlib.pyplot.plot(p_array)
+    matplotlib.pyplot.legend(['лин.интерп.шагов=' + str(num_x), 'профиль функции'], loc='best')
     matplotlib.pyplot.grid()
     matplotlib.pyplot.show()
