@@ -10,10 +10,6 @@ def log_map(x, r):
     return r * x * (1 - x)
 
 
-# запись значений функции
-# входные данные: число итераций, шаг, параметр нелинейности
-# выходные данные: массив значений итеративной функции
-# пока i в массиве, применяем к точке функцию, затем - добавляем в общий массив
 def do_map(
         itter_n=ITER,
         x_array=[0.1],
@@ -30,16 +26,12 @@ def do_map_w_average(
     for i in range(itter_n):
         x_array.append(log_map(x_array[i], r))
     sr = sum(do_map()) / ITER
-    print(sr)
     for i in range(itter_n):
         x_array.append(log_map(x_array[i], r) - sr)
     return x_array
 
 
 # составление профиля функции - НЕ ТРОГАТЬ!!!! РАБОТАЕТ!!!
-# входные данные: число итераций, шаг, параметр нелинейности
-# выходные данные: массив значений профиля функции
-# пока i в массиве, запоминаем i, и до значения i суммируем значения функции
 def do_profile(
         itter_n=ITER,
         x_array=[0.1],
@@ -47,7 +39,6 @@ def do_profile(
     for i in range(itter_n):
         x_array.append(log_map(x_array[i], r))
     sr = sum(do_map()) / ITER
-    #print(sr)
     p_array=[]
     for i in range(itter_n):
         y_array = []
@@ -57,34 +48,19 @@ def do_profile(
     return p_array
 
 
-# разделение списка на n частей
-def chunkIt(seq, num):
-    avg = len(seq) / float(num)
-    out = []
-    last = 0.0
-    while last < len(seq):
-        out.append(seq[int(last):int(last + avg)])
-        last += avg
-    return out
+# входные данные: массив / выходные - тоже массив данных, но с разным n
+def do_dfa(array, steps):
 
-
-# главный метод
-# построить профиль функци ++
-# линейная апроксимация при на n-ном участке
-# вычисление функции fdfa
-if __name__ == '__main__':
-    #профиль функции
-    p_array = do_profile()
-    # разбиение с количеством шагов num_x на интервале
-    num_x = 10
-    x = np.linspace(0, 1000, num=num_x, endpoint=True)
-    y = p_array[::ITER // num_x]
-    # интерполяция
+    print(ITER // steps)
+    x = np.linspace(0, 1000, num=steps, endpoint=True)
+    y = array[::ITER // steps]
     f = interp1d(x, y)
-    xnew = np.linspace(0, 1000, num=1000, endpoint=True)
-    # графики
-    matplotlib.pyplot.plot(f(xnew))
-    matplotlib.pyplot.plot(p_array)
-    matplotlib.pyplot.legend(['лин.интерп.шагов=' + str(num_x), 'профиль функции'], loc='best')
-    matplotlib.pyplot.grid()
+    x_new = np.linspace(0, 1000, num=1000, endpoint=True)
+
+    matplotlib.pyplot.plot(f(x_new))
+    matplotlib.pyplot.plot(array)
     matplotlib.pyplot.show()
+
+
+if __name__ == '__main__':
+    data = do_dfa(do_profile(), 10)
