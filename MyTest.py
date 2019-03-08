@@ -1,6 +1,7 @@
 import matplotlib.pyplot
 from scipy.interpolate import interp1d
 import numpy as np
+import math
 
 ITER = 1024
 
@@ -50,15 +51,17 @@ def do_profile(
 
 # входные данные: массив / выходные - тоже массив данных, но с разным n
 def do_dfa(array, steps):
-    for i in range(2,10):
+    z_array = []
+    for i in range(2, 9):
         x = np.linspace(0, ITER, num=steps**i, endpoint=True)
         y = array[::ITER // (steps**i)]
-        print(x,y)
         f = interp1d(x, y)
         x_new = np.linspace(0, ITER, num=ITER, endpoint=True)
-
-        matplotlib.pyplot.plot(f(x_new))
-        matplotlib.pyplot.show()
+        z_array.append((sum((array - f(x_new))**2)/ITER)**(1/2))
+        print(z_array[::-1])
+    matplotlib.pyplot.semilogy(z_array[::-1])
+    matplotlib.pyplot.title('Dependence between $log$n and $log F_{dna}$')
+    matplotlib.pyplot.show()
 
 
 if __name__ == '__main__':
