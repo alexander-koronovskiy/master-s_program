@@ -1,7 +1,6 @@
 import matplotlib.pyplot
 from scipy.interpolate import interp1d
 import numpy as np
-import math
 
 ITER = 1024
 
@@ -60,8 +59,20 @@ def do_dfa(array, steps):
         z_array.append((sum((array - f(x_new))**2)/ITER)**(1/2))
         print(z_array[::-1])
     matplotlib.pyplot.semilogy(z_array[::-1])
-    matplotlib.pyplot.title('Dependence between $log$n and $log F_{dna}$')
+    matplotlib.pyplot.title('Dependence between $lg$n and $lg F_{dna}$')
     matplotlib.pyplot.show()
+
+
+def step_interpolation(array, steps):
+    for i in range(1, 7):
+        x = np.linspace(0, ITER, num=steps**i, endpoint=True)
+        y = array[::ITER // (steps**i)]
+        f = interp1d(x, y)
+        x_new = np.linspace(0, ITER, num=ITER, endpoint=True)
+        matplotlib.pyplot.plot(f(x_new))
+        matplotlib.pyplot.plot(array)
+        matplotlib.pyplot.title('Profile - orange, Interpolation - blue, segments = ' + str(steps**i - 1))
+        matplotlib.pyplot.show()
 
 
 if __name__ == '__main__':
