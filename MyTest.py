@@ -95,13 +95,22 @@ def do_x_data(n):
     return x_data
 
 
-def do_2d_x_data(n):
-    x_data = []
-    for i in range(n):
-        x_data.append([i])
-    return x_data
+def best_fit(X, Y):
+    xbar = sum(X)/len(X)
+    ybar = sum(Y)/len(Y)
+    n = len(X)
+    numer = sum([xi*yi for xi, yi in zip(X, Y)]) - n * xbar * ybar
+    denum = sum([xi**2 for xi in X]) - n * xbar**2
+    b = numer / denum
+    a = ybar - b * xbar
+    print('best fit line:\ny = {:.2f} + {:.2f}x'.format(a, b))
+    vfit = [a + b * xi for xi in X]
+    return vfit
 
 
 if __name__ == '__main__':
-    data = do_profile()
-    step_interpolation(data, 2)
+    x = do_x_data(ITER)
+    y = do_profile()
+    plt.plot(x, best_fit(x, y))
+    plt.plot(y)
+    plt.show()
