@@ -47,24 +47,25 @@ def do_profile(
     return p_array
 
 
-# входные данные: массив / выходные - тоже массив данных, но с разным n
+# построение dfa-метода сложностью log(n)
 def do_dfa(array, steps):
     z_array = []
-    for i in range(2, 11):
+    for i in range(2, 10):
         interp = do_interpolation(array, steps**i)
-        z_array.append((sum((array - interp)**2)/ITER)**(1/2))
-        print(z_array[::-1])
-    matplotlib.pyplot.semilogy(z_array[::-1])
+        z_array.append(
+            (sum(do_sq_diff_arrays(array, interp)) / ITER)**(1/2)
+        )
+    matplotlib.pyplot.semilogy(z_array)
     matplotlib.pyplot.title('Dependence between $lg$n and $lg F_{dna}$')
     matplotlib.pyplot.show()
 
 
 def step_interpolation(array, steps):
-    for i in range(3):
+    for i in range(10):
         interp = do_interpolation(array, steps**i)
         matplotlib.pyplot.plot(interp)
         matplotlib.pyplot.plot(array)
-        matplotlib.pyplot.title('Profile - orange, Interpolation - blue, segments = ' + str(steps**i - 1))
+        matplotlib.pyplot.title('Profile - orange, approximation - blue')
         matplotlib.pyplot.show()
 
 
@@ -82,6 +83,7 @@ def do_x_data(n0, n):
     return x_data
 
 
+# linear approximation
 def best_fit(X, Y):
     xbar = sum(X)/len(X)
     ybar = sum(Y)/len(Y)
@@ -90,19 +92,32 @@ def best_fit(X, Y):
     denum = sum([xi**2 for xi in X]) - n * xbar**2
     b = numer / denum
     a = ybar - b * xbar
-    # print('best fit line:\ny = {:.2f} + {:.2f}x'.format(a, b))
+    # print('fit line: y = {:.2f} + {:.2f}x'.format(a, b))
     vfit = [a + b * xi for xi in X]
     return vfit
 
 
+# linear approximation of the array divided into j parts
 def do_interpolation(array, j):
     i = 0
-    x = do_x_data(i, ITER//j)
-    y = array[i:ITER//j:]
-    print(ITER//j)
-    return best_fit(x, y)
+    fit_array = []
+    while(i < ITER):
+        x = do_x_data(i, i + ITER//j)
+        y = array[i::]
+        fit_array = fit_array + best_fit(x, y)
+        i = i + ITER // j
+    return fit_array
+
+
+# give a a square different result between real values in two one-dimensional arrays / lists
+def do_sq_diff_arrays(x, y):
+    a = [x]
+    b = [y]
+    c = [list(map(lambda a, b: (a - b)**2, a[i], b[i])) for i in range(len(a))]
+    return c[0]
 
 
 if __name__ == '__main__':
     data = do_profile()
     step_interpolation(data, 2)
+    do_dfa(data, 2)
