@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d998a41c-00cf-43ba-8f27-16b9934ad365" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linearRegression.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2191">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="159">
+              <caret line="106" column="31" selection-start-line="106" selection-start-column="31" selection-end-line="106" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -148,7 +144,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.042372882" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.44067797" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -171,11 +167,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MyTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2191">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="159">
+          <caret line="106" column="31" selection-start-line="106" selection-start-column="31" selection-end-line="106" selection-end-column="31" />
         </state>
       </provider>
     </entry>

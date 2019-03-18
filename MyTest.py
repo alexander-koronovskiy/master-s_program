@@ -1,10 +1,7 @@
 import matplotlib.pyplot
-from scipy.interpolate import interp1d
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib as mpl
 
-ITER = 2048
+
+ITER = 1024
 
 
 # функция
@@ -50,14 +47,6 @@ def do_profile(
     return p_array
 
 
-def do_interpolation(array, i):
-    x = np.linspace(0, ITER, num=i, endpoint=True)
-    y = array[::ITER // i]
-    f = interp1d(x, y)
-    x_new = np.linspace(0, ITER, num=ITER, endpoint=True)
-    return f(x_new)
-
-
 # входные данные: массив / выходные - тоже массив данных, но с разным n
 def do_dfa(array, steps):
     z_array = []
@@ -71,11 +60,9 @@ def do_dfa(array, steps):
 
 
 def step_interpolation(array, steps):
-    for i in range(1, 9):
+    for i in range(3):
         interp = do_interpolation(array, steps**i)
         matplotlib.pyplot.plot(interp)
-        # write_to_file(f(x_new), 'interpolation_first.txt')
-        # print(f(x_new))
         matplotlib.pyplot.plot(array)
         matplotlib.pyplot.title('Profile - orange, Interpolation - blue, segments = ' + str(steps**i - 1))
         matplotlib.pyplot.show()
@@ -88,9 +75,9 @@ def write_to_file(array, filename):
     f.close()
 
 
-def do_x_data(n):
+def do_x_data(n0, n):
     x_data = []
-    for i in range(n):
+    for i in range(n0, n):
         x_data.append(i)
     return x_data
 
@@ -103,14 +90,19 @@ def best_fit(X, Y):
     denum = sum([xi**2 for xi in X]) - n * xbar**2
     b = numer / denum
     a = ybar - b * xbar
-    print('best fit line:\ny = {:.2f} + {:.2f}x'.format(a, b))
+    # print('best fit line:\ny = {:.2f} + {:.2f}x'.format(a, b))
     vfit = [a + b * xi for xi in X]
     return vfit
 
 
+def do_interpolation(array, j):
+    i = 0
+    x = do_x_data(i, ITER//j)
+    y = array[i:ITER//j:]
+    print(ITER//j)
+    return best_fit(x, y)
+
+
 if __name__ == '__main__':
-    x = do_x_data(ITER)
-    y = do_profile()
-    plt.plot(x, best_fit(x, y))
-    plt.plot(y)
-    plt.show()
+    data = do_profile()
+    step_interpolation(data, 2)
