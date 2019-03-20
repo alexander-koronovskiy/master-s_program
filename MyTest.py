@@ -65,6 +65,8 @@ def step_interpolation(array, steps):
         interp = do_interpolation(array, steps**i)
         matplotlib.pyplot.plot(interp)
         matplotlib.pyplot.plot(array)
+        # интервалы значений по осям X и Y
+        matplotlib.pyplot.axis([0, 2000, -5.0, 5.0])
         matplotlib.pyplot.title('Profile - orange, approximation - blue')
         matplotlib.pyplot.show()
 
@@ -117,7 +119,14 @@ def do_sq_diff_arrays(x, y):
     return c[0]
 
 
+def write_to_list(f):
+    data_list = list()
+    with open(f, "r") as file:
+        for line in file:  # file.readlines()
+            data_list = data_list + list(map(float, line.split()))
+    return(data_list)
+
+
 if __name__ == '__main__':
-    data = do_profile()
-    step_interpolation(data, 2)
-    do_dfa(data, 2)
+    data = write_to_list('RR.txt')
+    print(data)
