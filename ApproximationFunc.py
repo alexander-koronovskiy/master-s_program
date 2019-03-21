@@ -24,14 +24,6 @@ def do_approximation(array, n, j):
     return fit_array
 
 
-# give a a square different result between real values in two one-dimensional arrays / lists
-def do_sq_diff_arrays(x, y):
-    a = [x]
-    b = [y]
-    c = [list(map(lambda a, b: (a - b)**2, a[i], b[i])) for i in range(len(a))]
-    return c[0]
-
-
 def do_x_data(n0, n):
     x_data = []
     for i in range(n0, n):

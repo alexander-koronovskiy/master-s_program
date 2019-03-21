@@ -1,38 +1,31 @@
 import matplotlib.pyplot
 import ExtendedFunc
-
-ITER = 2048
-
-
-def log_map(x, r):
-    return r * x * (1 - x)
+import LogMap
+import WorkWFiles
 
 
-def do_map(
-        itter_n=ITER,
-        x_array=[0.1],
-        r=4):
-    for i in range(itter_n):
-        x_array.append(log_map(x_array[i], r))
-    return x_array
+def do_mean_value(array):
+    n = len(array)
+    return sum(array) / n
 
 
-def do_profile(
-        itter_n=ITER,
-        x_array=[0.1],
-        r=4):
-    for i in range(itter_n):
-        x_array.append(log_map(x_array[i], r))
-    sr = sum(do_map()) / ITER
+def do_profile(array):
     p_array = []
-    for i in range(itter_n):
+    sr = do_mean_value(array)
+    for i in range(len(array)):
         y_array = []
         for j in range(i):
-            y_array.append(x_array[j] - sr)
+            y_array.append(array[j] - sr)
         p_array.append(sum(y_array))
     return p_array
 
 
 if __name__ == '__main__':
-    data = do_profile()
-    ExtendedFunc.step_interpolation(data, ITER, 2)
+    data = WorkWFiles.write_to_list('RR.txt')
+    data_lg = LogMap.do_map()
+
+    profile_data = do_profile(data)
+    profile_data_lg = do_profile(data_lg)
+
+    # ExtendedFunc.step_interpolation(profile_data, 1024)
+    ExtendedFunc.do_dfa(profile_data, 1024)
