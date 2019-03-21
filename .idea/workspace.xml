@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d998a41c-00cf-43ba-8f27-16b9934ad365" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interpolation_first.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +16,51 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+            <state relative-caret-position="125">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#74#96#0" />
+                <element signature="e#174#264#0" />
+                <element signature="e#694#989#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WorkWithFiles.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExtendedFunc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#72#404#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApproximationFunc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#159#494#0" />
+                <element signature="e#590#790#0" />
+                <element signature="e#919#1034#0" />
+                <element signature="e#953#1034#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,13 +86,15 @@
         <option value="$PROJECT_DIR$/linearRegression.py" />
         <option value="$PROJECT_DIR$/../inf_systems_pavlov/inf_dynamics_task_2.py" />
         <option value="$PROJECT_DIR$/../inf_systems_pavlov/3_hausdorf.py" />
+        <option value="$PROJECT_DIR$/WorkWithFiles.py" />
+        <option value="$PROJECT_DIR$/ApproximationFunc.py" />
+        <option value="$PROJECT_DIR$/ExtendedFunc.py" />
         <option value="$PROJECT_DIR$/MyTest.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="725" />
-    <option name="y" value="35" />
+    <option name="x" value="693" />
     <option name="width" value="1235" />
     <option name="height" value="985" />
   </component>
@@ -153,7 +199,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="840" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -165,7 +211,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32909605" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.29943502" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.042372882" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -180,13 +226,50 @@
     <entry file="file://$PROJECT_DIR$/../inf_systems_pavlov/inf_dynamics_task_2.py" />
     <entry file="file://$PROJECT_DIR$/../inf_systems_pavlov/inf_dynamics_2_functions.py" />
     <entry file="file://$PROJECT_DIR$/../inf_systems_pavlov/3_hausdorf.py" />
+    <entry file="file://$PROJECT_DIR$/ApproximationFunc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#159#494#0" />
+            <element signature="e#590#790#0" />
+            <element signature="e#919#1034#0" />
+            <element signature="e#953#1034#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RR.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/ExtendedFunc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#72#404#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WorkWithFiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MyTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+        <state relative-caret-position="125">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#74#96#0" />
+            <element signature="e#174#264#0" />
+            <element signature="e#694#989#0" />
+          </folding>
         </state>
       </provider>
     </entry>
