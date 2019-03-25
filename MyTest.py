@@ -1,17 +1,14 @@
-import matplotlib.pyplot
-import ExtendedFunc
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy import signal
+import AKF
 import LogMap
 import WorkWFiles
 
 
-def do_mean_value(array):
-    n = len(array)
-    return sum(array) / n
-
-
 def do_profile(array):
     p_array = []
-    sr = do_mean_value(array)
+    sr = np.mean(array)
     for i in range(len(array)):
         y_array = []
         for j in range(i):
@@ -21,11 +18,9 @@ def do_profile(array):
 
 
 if __name__ == '__main__':
-    data = WorkWFiles.write_to_list('RR.txt')
-    data_lg = LogMap.do_map()
-
-    profile_data = do_profile(data)
-    profile_data_lg = do_profile(data_lg)
-
-    # ExtendedFunc.step_interpolation(profile_data, 1024)
-    ExtendedFunc.do_dfa(profile_data, 1024)
+    t = np.linspace(0, 1, 500, endpoint=False)
+    x = signal.square(2 * np.pi * 5 * t)
+    y = LogMap.do_map()
+    plt.plot(y)
+    plt.show()
+    AKF.do_all_akf(y)

@@ -22,7 +22,7 @@ def step_interpolation(array, n, step=2):
         matplotlib.pyplot.plot(interp)
         matplotlib.pyplot.plot(array)
         # интервалы значений по осям X и Y
-        matplotlib.pyplot.axis([0, 2000, -10.0, 10.0])
+        matplotlib.pyplot.axis([0, 1000, -10.0, 10.0])
         matplotlib.pyplot.title('Profile - orange, approximation - blue')
         matplotlib.pyplot.show()
 
