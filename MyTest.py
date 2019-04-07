@@ -3,7 +3,10 @@ import numpy as np
 from scipy import signal
 import AKF
 import LogMap
+import ExtendedFunc
 import WorkWFiles
+import math
+import ApproximationFunc
 
 
 def do_profile(array):
@@ -17,10 +20,22 @@ def do_profile(array):
     return p_array
 
 
-if __name__ == '__main__':
-    t = np.linspace(0, 1, 500, endpoint=False)
-    x = signal.square(2 * np.pi * 5 * t)
-    y = LogMap.do_map()
-    plt.plot(y)
+def do_plot(*args):
+    for i in args:
+        plt.plot(i)
     plt.show()
-    AKF.do_all_akf(y)
+
+
+if __name__ == '__main__':
+    y = LogMap.do_map()
+    z = do_profile(y)
+
+    # задача 1 - разбить массив на n равных частей
+    # аппроксимировать каждую часть
+    u = ApproximationFunc.parting(z, 2)
+    x0 = ApproximationFunc.do_x_data(0, len(u[0]))
+    x1 = ApproximationFunc.do_x_data(len(u[0]), len(u[0]) + len(u[1]))
+
+    bf0 = ApproximationFunc.best_fit(x0, u[0])
+    bf1 = ApproximationFunc.best_fit(x1, u[1])
+    do_plot(bf0 + bf1, u[0] + u[1])
