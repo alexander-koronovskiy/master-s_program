@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import numpy as np
 from scipy import signal
 import AKF
@@ -20,22 +19,9 @@ def do_profile(array):
     return p_array
 
 
-def do_plot(*args):
-    for i in args:
-        plt.plot(i)
-    plt.show()
-
-
 if __name__ == '__main__':
-    y = LogMap.do_map()
+    # dyn sys solutions or heartbeat RR txt files data
+    y = WorkWFiles.write_to_list('solutions/x.txt')
+    # y = LogMap.do_map()[:1024:]
     z = do_profile(y)
-
-    # задача 1 - разбить массив на n равных частей
-    # аппроксимировать каждую часть
-    u = ApproximationFunc.parting(z, 2)
-    x0 = ApproximationFunc.do_x_data(0, len(u[0]))
-    x1 = ApproximationFunc.do_x_data(len(u[0]), len(u[0]) + len(u[1]))
-
-    bf0 = ApproximationFunc.best_fit(x0, u[0])
-    bf1 = ApproximationFunc.best_fit(x1, u[1])
-    do_plot(bf0 + bf1, u[0] + u[1])
+    ExtendedFunc.do_dfa(z)

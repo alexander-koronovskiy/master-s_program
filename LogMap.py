@@ -1,4 +1,4 @@
-ITER = 1024
+ITER = 2048
 
 
 def log_map(x, r):
