@@ -21,7 +21,8 @@ def do_profile(array):
 
 if __name__ == '__main__':
     # dyn sys solutions or heartbeat RR txt files data
-    y = WorkWFiles.write_to_list('solutions/x.txt')
+    y = WorkWFiles.write_to_list('RR.txt')
+    ExtendedFunc.do_plot(y)
     # y = LogMap.do_map()[:1024:]
     z = do_profile(y)
     ExtendedFunc.do_dfa(z)
