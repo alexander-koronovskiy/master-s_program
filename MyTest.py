@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 from scipy import signal
 import AKF
 import LogMap
@@ -20,9 +21,21 @@ def do_profile(array):
 
 
 if __name__ == '__main__':
-    # dyn sys solutions or heartbeat RR txt files data
-    y = WorkWFiles.write_to_list('RR.txt')
-    ExtendedFunc.do_plot(y)
-    # y = LogMap.do_map()[:1024:]
+    # non-stationary analysed sequence
+    y = WorkWFiles.write_to_list('RR.txt')  # or y = LogMap.do_map()[:1024:]
+
+    # white noise sequence
+    mean = 0; std = 1
+    num_samples = 1000
+    y = np.random.normal(mean, std, size=num_samples)
+    print(y)
+
+    # time series plot
+    plt.plot(y); plt.xlabel("t");
+    plt.ylabel("Time series values"); plt.show()
+
+    # one or double profile transform
     z = do_profile(y)
-    ExtendedFunc.do_dfa(z)
+    w = do_profile(z)
+    plt.plot(z); plt.show()
+    # ExtendedFunc.do_dfa(z)

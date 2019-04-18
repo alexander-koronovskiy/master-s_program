@@ -16,7 +16,7 @@ def do_dfa(array):
         # visualization of approximation
         do_plot(fits, array)
     dfa_p.reverse()
-    do_plot(dfa_p)
+    plt.plot(dfa_p); plt.xlabel("$log_2 n$"); plt.ylabel("$log_2 F(n)$"); plt.show()
 
     # scaling rate coefficient printing
     dfa_x = ApproximationFunc.do_x_data(0, iter_log)
