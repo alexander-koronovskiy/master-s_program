@@ -51,4 +51,5 @@ def print_coefficient(X, Y):
     denum = sum([xi**2 for xi in X]) - n * xbar**2
     b = numer / denum
     a = ybar - b * xbar
-    print('fit line: y = {:.2f} + {:.2f}x'.format(a, b))
+    # print('fit line: y = {:.2f} + {:.2f}x'.format(a, b))
+    return b

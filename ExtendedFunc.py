@@ -24,7 +24,8 @@ def do_dfa(array, q=0.3):
 
         # visualization of approximation
         # do_plot(fits, array)
-    dfa_p.reverse(); F_q.reverse()
+    dfa_p.reverse();
+    F_q.reverse()
     return [dfa_p, F_q]
 
 

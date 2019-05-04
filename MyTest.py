@@ -1,10 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import ExtendedFunc
-import accessory.AKF as AKF
-import accessory.Runge as runge
-from scipy import signal
+import ApproximationFunc
 import scipy
+import ExtendedFunc
 import accessory.WorkWFiles as WorkWFiles
 
 
@@ -23,46 +21,42 @@ def do_profile(array):
 def do_plot(*args):
     for i in args:
         plt.plot(i)
-    plt.xlim(0, 100)
     plt.show()
 
 
-def dfa_plot():
-    y = WorkWFiles.write_to_list('solutions/RR.txt')
+def dfa_plot(q):
+    y = WorkWFiles.write_to_list('solutions/white_noise.txt'); print(len(y))
     z = do_profile(y)
-    q = - 20; t = ExtendedFunc.do_dfa(z, q)
+    t = ExtendedFunc.do_dfa(z, q)
     do_plot(t[0], t[1])
-    # WorkWFiles.write_to_file(t[1], 'dfa_q/' + str(q) + '.txt')
+    WorkWFiles.write_to_file(t[1], 'dfa_q/' + str(q) + '.txt')
 
 
-def xx(x): return x[0] * np.exp(complex(0, 1)*np.arctan(x[0]))
+def q_a():
+    q_arr = [-20, -15, -10, -5, -3, -2, -1, 1, 2, 3, 5, 10, 15, 20]
+    a_array = []
+    b_array = []
+    for i in q_arr:
+        dfa_plot(i)
+        q_a = WorkWFiles.write_to_list('dfa_q/' + str(i) + '.txt')
+        t = [0, 1, 2, 3, 4, 5, 6, 7]
+        alpha = ApproximationFunc.print_coefficient(t, q_a)
+        a_array.append(alpha)
+        b_array.append(q_a)
+    plt.plot(q_arr, a_array);
+    plt.xlabel("q")
+    plt.ylabel("alfa")
+    plt.show()
+    do_plot(b_array[0], b_array[1], b_array[2], b_array[3], b_array[4], b_array[5],
+            b_array[6], b_array[7], b_array[8], b_array[9])
+
+
+def w_noise_gen():
+    mean = 0
+    std = 1
+    num_samples = 2000
+    return np.random.normal(mean, std, size=num_samples)
 
 
 if __name__ == '__main__':
-    # stationary quadrant signal
-    t = np.linspace(0, 1, 500, endpoint=False)
-    x = signal.square(2 * np.pi * 5 * t)
-
-    # data
-    y = WorkWFiles.write_to_list('solutions/u.txt'); y_np = np.array(y)
-
-    # AKF and it's plot
-    y_ak = AKF.autocorr5(y_np, range(100))
-
-    # Fourier
-    yf = scipy.fftpack.fft(y); yf = abs(np.array(yf)) / (2 * np.pi * 100)
-
-    # integrate AKF
-    X = []
-    for i in range(len(y_ak)):
-        x = runge.rKN([y_ak[i]], [xx], 1, 1)
-        X = X + x
-
-    # integrate Fourier
-    Y = []
-    for i in range(len(yf)):
-        x = runge.rKN([yf[i]], [xx], 1, 1)
-        Y = Y + x
-
-    # y_ak, X, yf, Y
-    do_plot(X, yf)
+    dfa_plot(20)
