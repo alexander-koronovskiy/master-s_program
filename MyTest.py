@@ -1,7 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from accessory import WorkWFiles, ApproximationFunc
+from accessory import WorkWFiles
 import DFA
+import os
+from pylab import figure, plot, xlabel, grid, legend, title, savefig
+from matplotlib.font_manager import FontProperties
 
 
 def do_profile(array):
@@ -16,13 +19,19 @@ def do_profile(array):
 
 
 if __name__ == '__main__':
-    # step 1: take a solution; save plot as png format
-    solution = WorkWFiles.file_to_list(); s = solution[1::4]
-    WorkWFiles.list_to_graph(s, 'time series')
+    # take a solution; save plots in png format
+    ld = os.listdir(path="indata")
+    for i in ld:
+        for j in range(1, 4):
+            # get a solution
+            solution = WorkWFiles.write_to_list('indata/' + i); s = solution[j::4]
+            t = DFA.do_dfa(s)
 
-    # step 1.1: save a profile of func pic
-    # profile = do_profile(solution); WorkWFiles.list_to_graph(profile)
-
-    # step 2: save a plot of standard dfa method result as png file
-    t = DFA.do_dfa(s)
-    WorkWFiles.list_to_graph(t, 'dfa method result')
+            # save results as png
+            plt.plot(t[0]); grid(True)
+            plt.plot(t[1])
+            figure(1, figsize=(10, 8))
+            xlabel('$log_2 n$'); plt.ylabel('$log_2 dfa$')
+            title(t[2]); grid(True)
+            legend((r'$dfa_n$', r'$fit line$'), prop=FontProperties(size=12))
+            savefig('outdata/' + str(i[:-4:]) + '_'+str(j)+'.png', dpi=100); plt.clf()

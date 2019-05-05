@@ -9,7 +9,7 @@ def optimal_step(n):
 
 
 # dfa algorithm building
-def do_dfa(array, q=0.3):
+def do_dfa(array):
     # chose the step type: logarithm - iter_log or linear - iter
     iter_log = optimal_step(len(array)) // 2 + 1
     dfa_p = []
@@ -17,11 +17,15 @@ def do_dfa(array, q=0.3):
         # standard dfa algorithm realisation
         fits = ApproximationFunc.do_approximation(array, pow(2, i))
         point = sum(do_sq_diff_arrays(array, fits))/len(array)
-        dfa_p.append(pow(point, 0.5))
+        dfa_p.append(math.log2(pow(point, 0.5)))
         # visualization of approximation
-        do_plot(fits, array)
+        # do_plot(fits, array)
+
+    # dfa_p is result of dfa, closer_p - nearest approx line; b_coeff - inf about fit line
     dfa_p.reverse()
-    return dfa_p
+    closer_p = ApproximationFunc.do_approximation(dfa_p, 1)
+    b_coeff = ApproximationFunc.print_coefficient(closer_p, [j for j in range(len(closer_p))])
+    return dfa_p, closer_p, b_coeff
 
 
 # give a square different result between real values in two one-dimensional arrays
