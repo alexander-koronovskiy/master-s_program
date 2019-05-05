@@ -1,4 +1,13 @@
-ITER = 2048
+import numpy as np
+
+ITER = 2000
+
+
+def w_noise_gen():
+    mean = 0
+    std = 1
+    num_samples = ITER
+    return np.random.normal(mean, std, size=num_samples)
 
 
 def log_map(x, r):
