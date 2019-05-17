@@ -2,18 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d998a41c-00cf-43ba-8f27-16b9934ad365" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/PavlovTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DFA.py" beforeDir="false" afterPath="$PROJECT_DIR$/DFA.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accessory/ApproximationFunc.py" beforeDir="false" afterPath="$PROJECT_DIR$/accessory/ApproximationFunc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indata/RR.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indata/u.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indata/white_noise.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indata/wn_profile.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outdata/RR.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outdata/nefr01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outdata/nefr01_dfa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outdata/wn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indata/90E22Q01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indata/90J16Q01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indata/90j30q01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indata/91C14Q02.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indata/91b19q01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indata/91c12q04.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/90E22Q01_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/90E22Q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/90E22Q01_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/90J16Q01_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/90J16Q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/90J16Q01_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/90j30q01_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/90j30q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/90j30q01_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/91C14Q02_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/91C14Q02_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/91C14Q02_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/91b19q01_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/91b19q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/91b19q01_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/91c12q04_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/91c12q04_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outdata/91c12q04_3.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +40,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PavlovTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#1#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="485">
+              <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -36,10 +65,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessory/ApproximationFunc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DFA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="276">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -80,9 +118,11 @@
         <option value="$PROJECT_DIR$/accessory/DFA.py" />
         <option value="$PROJECT_DIR$/CoupleMass.py" />
         <option value="$PROJECT_DIR$/accessory/WorkWFiles.py" />
+        <option value="$PROJECT_DIR$/accessory/wavelet.py" />
+        <option value="$PROJECT_DIR$/OldTest.py" />
+        <option value="$PROJECT_DIR$/DFA.py" />
         <option value="$PROJECT_DIR$/accessory/ApproximationFunc.py" />
         <option value="$PROJECT_DIR$/MyTest.py" />
-        <option value="$PROJECT_DIR$/DFA.py" />
       </list>
     </option>
   </component>
@@ -104,11 +144,6 @@
               <item name="задача_курсовая" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
-            <path>
-              <item name="задача_курсовая" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="accessory" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -117,7 +152,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/OldTest.py" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -132,19 +167,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.MyTest">
-    <configuration name="CoupleMass" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="MyTest" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="задача_курсовая" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Alexander\Anaconda3\envs\sync\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\Alexander\virtualenv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CoupleMass.py" />
+      <option name="SCRIPT_NAME" value="D:\магистратура\задача_курсовая\MyTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,7 +188,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MyTest" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="PavlovTest" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="задача_курсовая" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -165,7 +200,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyTest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PavlovTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,8 +231,8 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.PavlovTest" />
       <item itemvalue="Python.MyTest" />
-      <item itemvalue="Python.CoupleMass" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -223,7 +258,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="840" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -233,9 +268,9 @@
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.32909605" />
       <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32909605" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32909605" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.33050847" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -335,27 +370,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accessory/ApproximationFunc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/accessory/wavelet.py" />
     <entry file="file://$PROJECT_DIR$/DFA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="276">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/accessory/ApproximationFunc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PavlovTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MyTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="485">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

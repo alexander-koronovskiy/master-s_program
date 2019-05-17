@@ -40,15 +40,3 @@ def do_x_data(n0, n):
     for i in range(n0, n):
         x_data.append(i)
     return x_data
-
-
-# return the coefficient of approximation line
-def print_coefficient(X, Y):
-    xbar = sum(X)/len(X)
-    ybar = sum(Y)/len(Y)
-    n = len(X)
-    numer = sum([xi*yi for xi, yi in zip(X, Y)]) - n * xbar * ybar
-    denum = sum([xi**2 for xi in X]) - n * xbar**2
-    b = numer / denum
-    a = ybar - b * xbar
-    return 'fit line: y = {:.2f} + {:.2f}x'.format(a, b)

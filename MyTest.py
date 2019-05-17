@@ -20,11 +20,12 @@ def do_profile(array):
 
 if __name__ == '__main__':
     # take a solution; save plots in png format
-    ld = os.listdir(path="indata")
+    ld = os.listdir(path="nefr")
     for i in ld:
         for j in range(1, 4):
             # get a solution
-            solution = WorkWFiles.write_to_list('indata/' + i); s = solution[j::4]
+            solution = WorkWFiles.write_to_list('nefr/' + i); s = solution[j::4]
+            s = do_profile(s)
             t = DFA.do_dfa(s)
 
             # save results as png
@@ -32,6 +33,6 @@ if __name__ == '__main__':
             plt.plot(t[1])
             figure(1, figsize=(10, 8))
             xlabel('$log_2 n$'); plt.ylabel('$log_2 dfa$')
-            title(t[2]); grid(True)
+            title('scaling exponent: {:.3f}'.format((max(t[0])-min(t[0]))/len(t[0])))
             legend((r'$dfa_n$', r'$fit line$'), prop=FontProperties(size=12))
-            savefig('outdata/' + str(i[:-4:]) + '_'+str(j)+'.png', dpi=100); plt.clf()
+            savefig('nefr_my/' + str(i[:-4:]) + '_'+str(j)+'.png', dpi=100); plt.clf()

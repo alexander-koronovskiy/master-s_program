@@ -24,8 +24,7 @@ def do_dfa(array):
     # dfa_p is result of dfa, closer_p - nearest approx line; b_coeff - inf about fit line
     dfa_p.reverse()
     closer_p = ApproximationFunc.do_approximation(dfa_p, 1)
-    b_coeff = ApproximationFunc.print_coefficient(closer_p, [j for j in range(len(closer_p))])
-    return dfa_p, closer_p, b_coeff
+    return dfa_p, closer_p
 
 
 # give a square different result between real values in two one-dimensional arrays
