@@ -18,11 +18,13 @@ def do_dfa(array):
         fits = ApproximationFunc.do_approximation(array, pow(2, i))
         point = sum(do_sq_diff_arrays(array, fits))/len(array)
         dfa_p.append(math.log2(pow(point, 0.5)))
+        # do_plot(array, fits)
         # visualization of approximation
         # do_plot(fits, array)
 
     # dfa_p is result of dfa, closer_p - nearest approx line; b_coeff - inf about fit line
     dfa_p.reverse()
+    do_plot(dfa_p)
     closer_p = ApproximationFunc.do_approximation(dfa_p, 1)
     return dfa_p, closer_p
 

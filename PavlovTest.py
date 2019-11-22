@@ -10,6 +10,7 @@ def c_alpha(array):
 
 
 if __name__ == '__main__':
+
     # take a solution; save plots in png format
     ld = os.listdir(path="nefr_dfa")
     x = [i/10 for i in range(30)]
@@ -21,8 +22,8 @@ if __name__ == '__main__':
             # save results as png
             plt.plot(x, s); grid(True)
             plt.plot(x, t)
-            title('scaling exponent: {:.3f}'.format(c_alpha(s)*10))
-            xlabel('$lg n$'); plt.ylabel('$lg dfa$')
+            title('scaling exponent: {:.3f}'.format(c_alpha(t)*10))
+            xlabel('$lg L$'); plt.ylabel('$lg F(L)$')
             figure(1, figsize=(10, 8))
-            legend((r'$dfa_n$', r'$fit line$'), prop=FontProperties(size=12))
+            legend((r'$F(L)$', r'$Fit line$'), prop=FontProperties(size=12))
             savefig('nefr_p/' + str(i[:-4:]) + '.png', dpi=100); plt.clf()
