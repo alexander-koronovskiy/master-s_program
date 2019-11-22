@@ -1,35 +1,29 @@
+from modules import ApproximationFunc
+
 import math
 import matplotlib.pyplot as plt
-from accessory import ApproximationFunc
 
 
-# optimal binary logarithmic step for dfa algorithm
-def optimal_step(n):
-    return math.floor(math.log2(n))
-
-
-# dfa algorithm building
+# DFA algorithm building
+# chose the step type: logarithmic - iter_log defined by this.optimal_step function
+# fits - X; point - Yk; dfa_p - array of F(L)
+# closer_p - Linear approximation of F(L)
 def do_dfa(array):
-    # chose the step type: logarithm - iter_log or linear - iter
     iter_log = optimal_step(len(array)) // 2 + 1
     dfa_p = []
+
     for i in range(iter_log):
-        # standard dfa algorithm realisation
         fits = ApproximationFunc.do_approximation(array, pow(2, i))
         point = sum(do_sq_diff_arrays(array, fits))/len(array)
         dfa_p.append(math.log2(pow(point, 0.5)))
-        # do_plot(array, fits)
-        # visualization of approximation
-        # do_plot(fits, array)
 
-    # dfa_p is result of dfa, closer_p - nearest approx line; b_coeff - inf about fit line
     dfa_p.reverse()
     do_plot(dfa_p)
     closer_p = ApproximationFunc.do_approximation(dfa_p, 1)
     return dfa_p, closer_p
 
 
-# give a square different result between real values in two one-dimensional arrays
+# invent to wheel for arrays quadratic difference (c)
 def do_sq_diff_arrays(x, y):
     a = [x]
     b = [y]
@@ -37,6 +31,12 @@ def do_sq_diff_arrays(x, y):
     return c[0]
 
 
+# binary logarithmic step for dfa algorithm
+def optimal_step(n):
+    return math.floor(math.log2(n))
+
+
+# invent to wheel for many graphics in one pic
 def do_plot(*args):
     for i in args:
         plt.plot(i)

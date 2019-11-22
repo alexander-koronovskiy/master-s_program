@@ -4,26 +4,78 @@
     <list default="true" id="d998a41c-00cf-43ba-8f27-16b9934ad365" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DFA.py" beforeDir="false" afterPath="$PROJECT_DIR$/DFA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PavlovTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/PavlovTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_my/90E22Q01_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_my/90J16Q01_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_my/90j30q01_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_my/91C14Q02_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_my/91b19q01_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_my/91c12q04_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_p/90E22Q01_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/nefr_p/90E22Q01_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_p/90E22Q01_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/nefr_p/90E22Q01_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_p/90J16Q01_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/nefr_p/90J16Q01_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_p/90J16Q01_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/nefr_p/90J16Q01_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_p/90j30q01_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/nefr_p/90j30q01_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_p/90j30q01_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/nefr_p/90j30q01_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_p/91C14Q02_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/nefr_p/91C14Q02_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_p/91C14Q02_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/nefr_p/91C14Q02_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_p/91b19q01_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/nefr_p/91b19q01_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_p/91b19q01_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/nefr_p/91b19q01_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_p/91c12q04_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/nefr_p/91c12q04_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nefr_p/91c12q04_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/nefr_p/91c12q04_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PavlovTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RR.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestFunc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessory/AKF.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessory/ApproximationFunc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessory/FourierPlot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessory/LagrangeMethod.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessory/WorkWFiles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessory/signals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr/90E22Q01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr/90J16Q01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr/90j30q01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr/91C14Q02.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr/91b19q01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr/91c12q04.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_dfa/90E22Q01_1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_dfa/90E22Q01_2.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_dfa/90J16Q01_1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_dfa/90J16Q01_2.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_dfa/90j30q01_1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_dfa/90j30q01_2.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_dfa/91C14Q02_1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_dfa/91C14Q02_2.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_dfa/91b19q01_1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_dfa/91b19q01_2.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_dfa/91c12q04_1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_dfa/91c12q04_2.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_my.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_my/90E22Q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_my/90E22Q01_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_my/90J16Q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_my/90J16Q01_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_my/90j30q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_my/90j30q01_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_my/91C14Q02_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_my/91C14Q02_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_my/91b19q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_my/91b19q01_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_my/91c12q04_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_my/91c12q04_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_p.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_p/90E22Q01_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_p/90E22Q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_p/90J16Q01_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_p/90J16Q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_p/90j30q01_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_p/90j30q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_p/91C14Q02_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_p/91C14Q02_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_p/91b19q01_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_p/91b19q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_p/91c12q04_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_p/91c12q04_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/90E22Q01_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/90E22Q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/90E22Q01_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/90J16Q01_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/90J16Q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/90J16Q01_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/90j30q01_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/90j30q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/90j30q01_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/91C14Q02_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/91C14Q02_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/91C14Q02_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/91b19q01_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/91b19q01_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/91b19q01_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/91c12q04_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/91c12q04_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nefr_pics/91c12q04_3.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,42 +86,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PavlovTest.py">
+        <entry file="file://$PROJECT_DIR$/DFA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+            <state relative-caret-position="1075">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TestFunc.py">
+        <entry file="file://$PROJECT_DIR$/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accessory/WorkWFiles.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="385">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
-                <element signature="e#0#36#0" expanded="true" />
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,14 +145,15 @@
         <option value="$PROJECT_DIR$/accessory/wavelet.py" />
         <option value="$PROJECT_DIR$/OldTest.py" />
         <option value="$PROJECT_DIR$/accessory/ApproximationFunc.py" />
-        <option value="$PROJECT_DIR$/DFA.py" />
         <option value="$PROJECT_DIR$/PavlovTest.py" />
         <option value="$PROJECT_DIR$/MyTest.py" />
         <option value="$PROJECT_DIR$/TestFunc.py" />
+        <option value="$PROJECT_DIR$/DFA.py" />
+        <option value="$PROJECT_DIR$/index.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="750" />
     <option name="y" value="65" />
     <option name="width" value="1155" />
@@ -137,16 +172,6 @@
               <item name="задача_курсовая" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
-            <path>
-              <item name="задача_курсовая" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="accessory" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="задача_курсовая" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="nefr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -154,7 +179,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TestFunc.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/index.py" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -218,12 +243,12 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Alexander\Anaconda3\envs\MyTest.py\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\Alexander\Anaconda3\envs\sync\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestFunc.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/index.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -283,6 +308,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15664244" />
@@ -293,8 +319,8 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32909605" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32909605" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.28672317" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.31779662" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.3997175" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32909605" />
@@ -353,89 +379,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accessory/LagrangeMethod.py">
+    <entry file="file://$PROJECT_DIR$/accessory/LagrangeMethod.py" />
+    <entry file="file://$PROJECT_DIR$/accessory/AKF.py" />
+    <entry file="file://$PROJECT_DIR$/accessory/FourierPlot.py" />
+    <entry file="file://$PROJECT_DIR$/MyTest.py" />
+    <entry file="file://$PROJECT_DIR$/accessory/WorkWFiles.py" />
+    <entry file="file://$PROJECT_DIR$/PavlovTest.py" />
+    <entry file="file://$PROJECT_DIR$/accessory/ApproximationFunc.py" />
+    <entry file="file://$PROJECT_DIR$/accessory/signals.py" />
+    <entry file="file://$PROJECT_DIR$/old_codes/MyTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="1225">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accessory/AKF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-563">
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessory/FourierPlot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessory/signals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TestFunc.py" />
     <entry file="file://$PROJECT_DIR$/DFA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="1075">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accessory/ApproximationFunc.py">
+    <entry file="file://$PROJECT_DIR$/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PavlovTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        <state relative-caret-position="385">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessory/WorkWFiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestFunc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
